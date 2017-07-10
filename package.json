@@ -4,7 +4,8 @@
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
-    "watch": "watchify app/app.js -t babelify -o public/js/bundle.js --debug --verbose"
+    "watch": "watchify app/app.js -t babelify -o public/js/bundle.js --debug --verbose",
+    "build": "electron-packager ./ SoundCloudPlayer --all --out=./build --overwrite"
   },
   "dependencies": {
     "axios": "^0.9.1",
@@ -20,5 +21,8 @@
     "react-dom": "^0.14.7",
     "react-sound": "^0.4.0",
     "soundmanager2": "^2.97.20150601-a"
+  },
+  "devDependencies": {
+    "electron-packager": "^8.7.2"
   }
 }

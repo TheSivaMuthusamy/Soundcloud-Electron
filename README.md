@@ -8,3 +8,7 @@ An electron based Soundcloud player. Built with a different setup compared to pa
 
 - `npm install`
 - `npm run start`
+
+---
+
+Builds have also been added if you don't want to install. Just choose the correct build for your OS in the build folder.

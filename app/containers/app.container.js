@@ -136,7 +136,7 @@ class AppContainer extends React.Component {
 
 	render () {
 		const artStyle = {
-			width: '100%',
+			width: '500px',
 			height: '500px',
 			backgroundImage: `linear-gradient(
 			rgba(0, 0, 0, 0.7),
@@ -160,6 +160,11 @@ class AppContainer extends React.Component {
 					onPlaying={this.handleSongPlaying.bind(this)}
 					playFromPosition={this.state.playFromPosition}
 					onFinishedPlaying={this.handleSongFinished.bind(this)}/>
+				<Progress
+					elapsed={this.state.elapsed}
+					total={this.state.total}
+					position={this.state.position}
+					handleProgress={this.handleProgress}/>
 				<Player
 					togglePlay={this.togglePlay.bind(this)}
 					stop={this.stop.bind(this)}
@@ -167,11 +172,6 @@ class AppContainer extends React.Component {
 					forward={this.forward.bind(this)}
 					backward={this.backward.bind(this)}
 					random={this.randomTrack.bind(this)}/>
-				<Progress
-					elapsed={this.state.elapsed}
-					total={this.state.total}
-					position={this.state.position}
-					handleProgress={this.handleProgress}/>
 			</div>
 		);
 	}

@@ -37,7 +37,7 @@ body{
 
 .player{
   text-align: center;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 
 .player div{
@@ -49,47 +49,46 @@ body{
 .player .player__backward button, 
 .player .player__forward button{
   background: transparent;
-  border: 1px solid rgb(243, 139, 114);
-  color: rgb(243, 139, 114);
-  width: 75px;
-  height: 75px;
+  border: 1px solid white;
+  color: white;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
-  font-size: 35px;
+  font-size: 15px;
   outline: none;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-.player .player__backward button{
-  border-left: none;
-}
 
-.player .player__forward button{
-  border-right: none;
-}
+.player .player__main button:hover{
+  color: white;
+  border: 1px solid white;
+} 
 
-.player .player__main button:hover, 
 .player .player__backward button:hover, 
 .player .player__forward button:hover{
-  color: rgba(243, 139, 114, 0.7);
-  border: 1px solid rgba(243, 139, 114, 0.7);
+  color: white;
+  border: 2px solid white;
 }
 
 .player .player__main {
-  border: 1px solid rgb(243, 139, 114);
+  border: 1px solid white;
 }
 
 .player .player__main button {
-  color: rgb(243, 139, 114);
+  color: white;
   background: transparent;
-  width: 75px;
-  height: 75px;
+  width: 40px;
+  height: 45px;
   border: none;
-  font-size: 35px;
+  font-size: 15px;
   outline: none;
 }
 
 .progress{
   text-align: center;
-  margin-top: 100px;
+  margin-top: 200px;
     color: white;
 }
 
